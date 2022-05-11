@@ -1,0 +1,59 @@
+:root {
+    --bg-size: 400%;
+    --colour-one: rgb(220, 136, 220);
+    --colour-two: rgb(21, 99, 209);
+}
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    display: grid;
+    place-items: center;
+    min-height: 100vh;
+    background: hsl(0 0% 20%);
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif
+}
+
+.text {
+    font-size: clamp(3rem, 20vmin, 10rem);
+    background: linear-gradient(
+        90deg,
+        var(--colour-one),
+        var(--colour-two),
+        var(--colour-one)
+    ) 0 0 / var(--bg-size) 100%;
+    animation: move-bg 10s infinite linear;
+    color: transparent;
+    background-clip: text;
+}
+
+@keyframes move-bg {
+    to {
+        background-position: var(--bg-size) 0;
+    }
+}
+
+.buttonContainer {
+    align-items: center;
+    display: flex;
+    justify-content: space-around;
+}
+
+.button {
+    color: white;
+    border: 0;
+    padding: 10px;
+    border-radius: 10;
+    justify-content: center;
+    height: 5em;
+    background: linear-gradient(
+        90deg,
+        var(--colour-two),
+        var(--colour-one),
+        var(--colour-two)
+    ) 0 0 / var(--bg-size) 100%;
+    animation: move-bg 10s infinite linear;
+}
+
