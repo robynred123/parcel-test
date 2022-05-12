@@ -19,3 +19,7 @@ label {
     width: 100%;
 }
 
+p {
+    color: var(--colour-two);
+}
+
