@@ -5,7 +5,7 @@ import Button from "./components/button";
 export const Home = () => {
 	const [showDefault, setShowDefault] = useState(true);
     let navigate = useNavigate()
-	console.log("home page");
+    
 	return (
 		<>
 			<h1 className="text">

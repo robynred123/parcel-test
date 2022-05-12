@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import { Formik, Field, Form, FormikHelpers } from "formik";
+import './styles/form.css'
 
 interface Values {
 	name: string;
@@ -8,6 +9,7 @@ interface Values {
 }
 
 export const EmailForm = () => {
+
 	return (
 		<Formik
 			initialValues={{
@@ -24,13 +26,13 @@ export const EmailForm = () => {
 		>
 			<Form>
 				<label htmlFor="name">Full Name</label>
-				<Field id="name" name="name" placeholder="John Doe" />
+				<Field id="input" name="name" placeholder="John Doe" />
 
 				<label htmlFor="email">Email</label>
-				<Field id="email" name="email" placeholder="email@domain.co.uk" />
+				<Field id="input" name="email" placeholder="email@domain.co.uk" />
 
 				<label htmlFor="message">Your Message</label>
-				<Field id="message" name="message" placeholder="..." type="textArea" />
+				<Field as="textarea" id="input" name="message" />
 
 				<button type="submit">Submit</button>
 			</Form>
