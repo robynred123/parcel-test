@@ -4,3 +4,4 @@ build/release
 node_modules/
 .parcel-cache
 dist/
+coverage/
