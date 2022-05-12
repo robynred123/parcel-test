@@ -1,0 +1,9 @@
+{
+  "compilerOptions": {
+    "jsx": "react-jsx",
+    "esModuleInterop": true,
+    "rootDir": "./src"
+  },
+  "exclude": ["dist", "node_modules"],
+  "include": ["**/*.tsx"]
+}

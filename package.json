@@ -9,12 +9,18 @@
   "source": "index.html",
   "scripts": {
     "start": "parcel",
-    "build": "parcel build"
+    "build": "parcel build",
+    "test": "jest"
   },
   "author": "me",
   "license": "ISC",
   "devDependencies": {
-    "parcel": "2.5.0"
+    "@babel/preset-typescript": "^7.16.7",
+    "@types/jest": "^27.5.1",
+    "jest": "^28.1.0",
+    "parcel": "2.5.0",
+    "react-test-renderer": "^18.1.0",
+    "ts-jest": "^28.0.2"
   },
   "dependencies": {
     "@types/react": "18.0.9",
